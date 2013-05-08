@@ -1,0 +1,223 @@
+/* 1. @Font-Face Ñ load my google fonts or WOFFs or whatever... */
+
+/* Regular */
+@font-face {
+    font-family: 'Nobel';
+    src: local('DTLNobel T Bold'), local('DTLNobelT-Bold'), url('ff/dtlnobelt-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* END @Font-Face */
+
+/* Colors */
+/*
+yellow      rgba(255,255,0,1);
+magenta     rgba(254,111,214,1);
+cyan        rgba(0,200,255,1);
+*/
+
+/* =============================================================== */
+
+body { padding-top: 80px; }
+
+@media only screen and (max-width : 979px),
+only screen and (max-device-width : 979px){
+  body { padding-top: 0; }
+}
+
+/* =============================================================== */
+
+nav {
+  color:black;
+  font-family: 'Nobel', Helvetica, Arial, Sans-serif;
+  text-transform: uppercase;
+  height: 60px;
+}
+
+nav h2 {
+  color:black;
+  font-size: 30px;
+  line-height: 20px;
+  margin: 0; 
+  padding: 0;
+  }
+
+.navbar-fixed-top .navbar-inner,
+.navbar-static-top .navbar-inner {
+  background: rgba(255,255,255,.7);
+  border-bottom: 1px solid rgba(151,151,151,1);
+  color:black;
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
+}
+
+.navbar .nav > li > a {
+  border-left: 1px solid rgba(151,151,151,1);
+  float: none;
+  padding: 10px 30px 10px;
+  color: black;;
+  text-decoration: none;
+  text-shadow: 0px 0px 0px black;
+}
+
+.navbar .nav > li:last-child > a {
+  border-right: 1px solid rgba(151,151,151,1);
+}
+
+.navbar .nav > .active > a, 
+.navbar .nav > .active > a:hover, 
+.navbar .nav > .active > a:focus {
+  color: black;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.home .navbar .nav > .active > a, 
+.home .navbar .nav > .active > a:hover, 
+.home .navbar .nav > .active > a:focus,
+.findus .navbar .nav > .active > a, 
+.findus .navbar .nav > .active > a:hover, 
+.findus .navbar .nav > .active > a:focus {
+  background-color: rgba(255,131,214,1);
+}
+
+.about .navbar .nav > .active > a, 
+.about .navbar .nav > .active > a:hover, 
+.about .navbar .nav > .active > a:focus,
+.gallery .navbar .nav > .active > a, 
+.gallery .navbar .nav > .active > a:hover, 
+.gallery .navbar .nav > .active > a:focus {
+  background-color: rgba(255,255,0,1);
+}
+
+/* =============================================================== */
+/** Masonry Grid Styles **/
+/** Works with jquery masonry JS solution
+/* =============================================================== */
+
+#masonry img {width: 100%;}
+
+#masonry {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#masonry li {
+  background: transparent url('../img/graphpaper.gif') center center;
+  margin-bottom: 30px;
+}
+
+#masonry li.yellow:hover { background-color: rgba(255,255,0,1); }
+#masonry li.pink:hover   { background-color: rgba(255,131,214,1); }
+#masonry li.blue:hover   { background-color: rgba(0,194,255,1); }
+
+.welldoneitem {
+  border: 1px solid black;
+  position: relative;
+  cursor: pointer;
+}
+
+.welldoneitem article.description {
+  background: rgba(255,255,255,.7);
+  border: 1px solid black;
+  margin: -1px;
+  padding: 0;
+  overflow: visible;
+  vertical-align: baseline;
+  visibility: hidden;
+  /**/
+  position: fixed;
+  bottom: 0;
+  z-index: 99;
+}
+
+article.description h1,
+article.description p {
+  margin: 10px;
+}
+
+article.description h1 {
+  border-bottom: 1px solid;
+  font-family: 'Nobel', Helvetica, Arial, Sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+article.description p {
+  font-size: : 12px;
+  line-height: 28px;
+}
+
+/* =============================================================== */
+/** Slideshow on Gallery page **/
+/* =============================================================== */
+
+.slideshow, .slideshow section { 
+  height: 500px;
+  }
+
+.slideshow section {width: 100%;}
+
+section.yellow { background-color: rgba(255,255,0,1); }
+section.pink   { background-color: rgba(255,131,214,1); }
+section.blue   { background-color: rgba(0,194,255,1); }
+
+
+
+/* =============================================================== */
+/* CSS only Masonry-like solution
+#masonry, #masonry li, #masonry li .welldoneitem {
+  overflow: visible;
+  position: relative;
+  z-index: 1;
+}
+
+#masonry {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  -moz-column-count: 3;
+  -moz-column-gap: 0;
+  -webkit-column-count: 3;
+  -webkit-column-gap: 0;
+  column-count: 3;
+  column-gap: 0;
+}
+
+@media only screen and (max-width : 799px),
+only screen and (max-device-width : 799px){
+
+  #masonry {
+    -moz-column-count: 2;
+    -moz-column-gap: 0px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 0px;
+    column-count: 2;
+    column-gap: 0;
+  }
+}
+ 
+@media only screen and (max-width : 479px),
+only screen and (max-device-width : 479px){
+  #masonry {
+    -moz-column-count: 1;
+    -moz-column-gap: 0px;
+    -webkit-column-count: 1;
+    -webkit-column-gap: 0px;
+    column-count: 1;
+    column-gap: 0;
+  }
+}
+ 
+#masonry li, #masonry li img{
+  margin-bottom: 0px;
+  width: 100%;
+}
+END CSS MASONRY SOLUTION ... not perfect, but decent since only relies on CSS Ñ could use for a personal project */
+
