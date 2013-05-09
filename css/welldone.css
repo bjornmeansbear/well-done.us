@@ -248,7 +248,7 @@ END CSS MASONRY SOLUTION ... not perfect, but decent since only relies on CSS Ñ 
 .splash #main img.top {
   height: auto;
   position: absolute;
-  top:0;
+  top:50%;
   left:0;
   width: 100%;
 }

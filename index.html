@@ -54,6 +54,13 @@
       $('#main').height(wh-50).width(ww);
     });
 
+    $(window).load(function() {
+      // declaring various variables
+      var wdh = $('#main img.top').height();
+      var mult = 0-1;
+      $('#main img.top').css('margin-top',(wdh/2)*mult);
+    });
+
     $(window).resize(function() {
       // declaring various variables
       var wh = $(window).height();
