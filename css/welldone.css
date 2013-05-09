@@ -232,9 +232,7 @@ END CSS MASONRY SOLUTION ... not perfect, but decent since only relies on CSS Ñ 
 /* =============================================================== */
 
 .splash {
-  height: 100%;
   position: relative;
-  width:100%;
 }
 
 .splash #main {
@@ -242,7 +240,6 @@ END CSS MASONRY SOLUTION ... not perfect, but decent since only relies on CSS Ñ 
   top:25px;
   left:0;
   text-align: center;
-  width: 100%;
 }
 
 .splash #main img.top {
