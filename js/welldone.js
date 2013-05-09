@@ -18,8 +18,6 @@ $(document).ready(function() {
 });
 
 
-  
-
 // masonry stuff to fit everything together...
 $(function(){
   var $container = $('#masonry');

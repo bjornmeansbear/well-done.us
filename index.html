@@ -30,169 +30,38 @@
   
   </head>
   
-  <body class="home">
-  <body>
+  <body class="splash">
 
-    <!-- Nav!
-    ================================================== -->
-    <nav class="navbar navbar-fixed-top mainnav">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <div class="">
-            <a class="brand" href="index.html"><h2>Well Done.</h2></a>
-          </div>
-          <div class="nav-collapse collapse pull-right">
-            <ul class="nav">
-              <li class="active"><a href="index.html">Collection</a></li>
-              <li><a href="about.html">About</a></li>
-<!--
-              <li><a href="findus.html">Find Us</a></li>
-              <li><a href="gallery.html">Gallery</a></li>
--->
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
-    </nav>
-
-    <!-- Header!
-    ================================================== -->
-    <header class="container">
-      <div class="row">
-<!--         <h1>Well Done.</h1> -->
-      </div>
-    </header>
-            
-    <main class="container">
-      <!-- main array of masonry-ed thumbnails -->
-      <div class="row">
-        <ul id="masonry">
-          <!-- THING 1 -->
-          <li class="span4 yellow">
-            <div class="welldoneitem">
-              <img src="img/559443.gif" />
-              <article class="description span4">
-                <h1>Record Player</h1>
-                <p>Lorem Ipsum thing description that goes on and on and on like this. Maybe, perhaps, even a bit more.</p>
-              </article>
-            </div>
-          </li>
-          <!-- THING 2 -->
-          <li class="span4 pink">
-            <div class="welldoneitem">
-              <img src="img/backpack.png" />
-              <article class="description span4">
-                <h1>Black Pack</h1>
-                <p>Sleek and versatile, this unisex backpack is constructed out of durable canvas with leather details. Available in black and white.</p>
-              </article>
-            </div>
-          </li>
-          <!-- THING 3 -->
-          <li class="span4 blue">
-            <div class="welldoneitem">
-              <img src="img/necklace4.png" />
-              <article class="description span4">
-                <h1>Necklace</h1>
-                <p>Lorem Ipsum thing description that goes on and on and on like this. Maybe, perhaps, even a bit more.</p>
-              </article>
-            </div>
-          </li>
-          <!-- THING 4 -->
-          <li class="span4 yellow">
-            <div class="welldoneitem">
-              <img src="img/shoe.png" />
-              <article class="description span4">
-                <h1>A Shoe</h1>
-                <p>Lorem Ipsum thing description that goes on and on and on like this. Maybe, perhaps, even a bit more.</p>
-              </article>
-            </div>
-          </li>
-          <!-- THING 5 -->
-          <li class="span4 pink">
-            <div class="welldoneitem">
-              <img src="img/necklaceyellow.png" />
-              <article class="description span4">
-                <h1>Another Necklace</h1>
-                <p>Lorem Ipsum thing description that goes on and on and on like this. Maybe, perhaps, even a bit more.</p>
-              </article>
-            </div>
-          </li>
-          <!-- THING 6 -->
-          <li class="span4 blue">
-            <div class="welldoneitem">
-              <img src="img/stool.png" />
-              <article class="description span4">
-                <h1>Stool!</h1>
-                <p>Lorem Ipsum thing description that goes on and on and on like this. Maybe, perhaps, even a bit more.</p>
-              </article>
-            </div>
-          </li>
-          <!-- THING 7 -->
-          <li class="span4 yellow">
-            <div class="welldoneitem">
-              <img src="img/sunglasses.png" />
-              <article class="description span4">
-                <h1>Some Sunglasses</h1>
-                <p>Lorem Ipsum thing description that goes on and on and on like this. Maybe, perhaps, even a bit more.</p>
-              </article>
-            </div>
-          </li>
-          <!-- THING 8 -->
-          <li class="span4 pink">
-            <div class="welldoneitem">
-              <img src="img/watch.png" />
-              <article class="description span4">
-                <h1>A Watch</h1>
-                <p>Lorem Ipsum thing description that goes on and on and on like this. Maybe, perhaps, even a bit more. Lorem Ipsum thing description that goes on and on and on like this. Maybe, perhaps, even a bit more.</p>
-              </article>
-            </div>
-          </li>
-          <!-- THING 9 -->
-          <li class="span4 blue">
-            <div class="welldoneitem">
-              <img src="img/savers.png" />
-              <article class="description span4">
-                <h1>Nice food containers.</h1>
-                <p>Lorem Ipsum thing description that goes on and on and on like this. Maybe, perhaps, even a bit more.</p>
-              </article>
-            </div>
-          </li>
-          <!-- THING 10 -->
-          <li class="span4 yellow">
-            <div class="welldoneitem">
-              <img src="img/bigcoat.png" />
-              <article class="description span4">
-                <h1>What a Coat.</h1>
-                <p>Lorem Ipsum thing description that goes on and on and on like this. Maybe, perhaps, even a bit more.</p>
-              </article>
-            </div>
-          </li>
-        </ul>
-      <!-- end Masonry-ed bits -->
-      </div>
-    </main>
+    <div id="main">
+      <img class="top" src="img/comingsoon.png"/>
+      <img class="bg" src="img/background.jpg"/>
+    </div>
   
-    <footer class="container">
-      <div class="row">
-        <article class="span4">
-          <p>© 2013</p>
-        </article>
-        <article class="span4">
-          <p>Any other footer info needed?</p>
-        </article>
-      </div>
-    </footer>
-    
   </body>
   
   <script src="js/jquery-1.9.1.js"></script>
   <script src="js/bootstrap.js"></script>
-  <script src="js/jquery.masonry.js"></script>
   <script src="js/welldone.js"></script>
+  
+  <script>
+
+    $(window).load(function() {
+      // declaring various variables
+      var wh = $(window).height();
+      var ww = $(window).width();
+      //using the variables to initially position things
+      $('body').height(wh).width(ww);
+      $('#main').height(wh-50).width(ww);
+    });
+
+    $(window).resize(function() {
+      // declaring various variables
+      var wh = $(window).height();
+      //using the variables to initially position things
+      $('body').height(wh).width(ww);
+      $('#main').height(wh-50).width(ww);
+    });
+      
+  </script>
   
 </html>
