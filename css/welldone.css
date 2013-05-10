@@ -12,6 +12,18 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Apercu';
+    src: url('ff/apercu_bold-webfont.eot');
+    src: local('Apercu Bold'), local('Apercu-Bold'),
+         url('ff/apercu_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('ff/apercu_bold-webfont.woff') format('woff'),
+         url('ff/apercu_bold-webfont.ttf') format('truetype'),
+         url('ff/apercu_bold-webfont.svg#apercubold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* END @Font-Face */
 
 /* Colors */
@@ -323,19 +335,29 @@ END CSS MASONRY SOLUTION ... not perfect, but decent since only relies on CSS Ñ 
   }
 
 #about .outer-container .inner-container div p {
-  width: 75%;
-  margin: 0 auto 1em auto;
+  font-family: 'Apercu', Helvetica, Arial, Sans-serif;
   font-size: 80%;
-  font-family: 'Nobel', Helvetica, Arial, Sans-serif;
   letter-spacing: 1px;
+  margin: 0 auto 1em auto;
+  width: 75%;
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   hyphens: auto;
 }
 
-#about .outer-container .inner-container p.close {
+#about .outer-container .inner-container p.ex {
+  font-family: 'Apercu', Helvetica, Arial, Sans-serif;
+  font-size: 72px;
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 30px;
+  right: 30px;
   z-index: 99999;
+  color: rgba(250,121,210,1);
+  text-shadow: none;
+  opacity: .44;
+  cursor: pointer;
+}
+
+#about .outer-container .inner-container p.ex:hover {
+  opacity: 1;
 }

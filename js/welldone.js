@@ -40,7 +40,7 @@ $(function(){
   });
 
   // Some Custom JS for the site
-  $(".close").click(function(event) {
+  $(".ex").click(function(event) {
     event.preventDefault();
     $("#about").fadeOut(400);
   });
