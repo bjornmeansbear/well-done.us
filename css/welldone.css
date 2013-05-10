@@ -112,7 +112,8 @@ nav h2 {
   text-shadow: none;
   }
   
-.logo .brand {
+.logo .brand,
+.logo .brand h2 {
   font-weight: normal;
   text-shadow: none;
 }
