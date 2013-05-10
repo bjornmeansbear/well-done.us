@@ -111,6 +111,11 @@ nav h2 {
   margin-left: 20px;;
   text-shadow: none;
   }
+  
+.logo .brand {
+  font-weight: normal;
+  text-shadow: none;
+}
 
 
 /* =============================================================== */
