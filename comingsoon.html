@@ -1,0 +1,75 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en" id="home"> <!--<![endif]-->
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  
+    <title>Well Done.</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+  
+    <link rel="stylesheet" href="css/welldone.css">
+    
+    <script src="js/libs/modernizr-1.7.min.js"></script>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  
+  </head>
+  
+  <body class="splash">
+
+    <div id="main">
+      <img class="top" src="img/comingsoon.png"/>
+      <img class="bg" src="img/background.jpg"/>
+    </div>
+  
+  </body>
+  
+  <script src="js/jquery-1.9.1.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/welldone.js"></script>
+  
+  <script>
+
+    $(window).load(function() {
+      // declaring various variables
+      var wh = $(window).height();
+      var ww = $(window).width();
+      //using the variables to initially position things
+      $('body').height(wh).width(ww);
+      $('#main').height(wh-50).width(ww);
+    });
+
+    $(window).load(function() {
+      // declaring various variables
+      var wdh = $('#main img.top').height();
+      var mult = 0-1;
+      $('#main img.top').css('margin-top',(wdh/2)*mult);
+    });
+
+    $(window).resize(function() {
+      // declaring various variables
+      var wh = $(window).height();
+      var ww = $(window).width();
+      //using the variables to initially position things
+      $('body').height(wh).width(ww);
+      $('#main').height(wh-50).width(ww);
+    });
+      
+  </script>
+  
+</html>
